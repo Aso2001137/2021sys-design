@@ -9,7 +9,7 @@ if(体力<=20) then (true)
 
 else(false)
 :頑張ってレベルを上げる;
-
+endif
 end
 @enduml
 ```
