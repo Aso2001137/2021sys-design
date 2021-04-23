@@ -1,3 +1,4 @@
+```uml
 @startuml
 :体力=10;
 if(体力<=20)then(true)
@@ -7,3 +8,4 @@ else
 endif
 end
 @enduml
+```
