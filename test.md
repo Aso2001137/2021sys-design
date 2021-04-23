@@ -4,7 +4,7 @@
 if(体力<=20)then(true)
 :宿屋に泊まる;
 else
-:頑張ってレベルを上げる
+:頑張ってレベルを上げる;
 endif
 end
 @enduml
