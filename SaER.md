@@ -52,5 +52,10 @@ detail
 del_flag
 reg_date
 }
+m_customers ----- d_purchase
+d_purchase ----- d_purchase_detail
+d_purchase_detail ----- m_items
+m_items ----- m_category
 @enduml
 ```
+
