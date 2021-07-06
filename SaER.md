@@ -1,7 +1,6 @@
-@startuml
 ```uml
-entity "ユーザーテーブル" as customer <m_customers>
-<<M,MASTER_MARK_COLOR>> {
+@startuml
+entity "ユーザーテーブル" as customer <m_customers>{
   + customer_code [PK]
   --
   pass
@@ -12,5 +11,5 @@ entity "ユーザーテーブル" as customer <m_customers>
   del_flag
   reg_date
 }
-```
 @enduml
+```
