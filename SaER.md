@@ -53,10 +53,10 @@ entity "商品テーブル" as  items <m_items>{
   reg_date
 }
 
-customer ----- purchase
-purchase ----- purchase_detail
-purchase_detail ----- items
-items ----- category
+customer ---ri-- purchase
+purchase ---ri-- purchase_detail
+purchase_detail --do--- items
+items ---le-- category
 @enduml
 ```
 
