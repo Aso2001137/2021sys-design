@@ -1,6 +1,6 @@
 ```uml
 @startuml
-entity "ユーザーテーブル" as  <m_customers>{
+entity "ユーザーテーブル" as  customer <m_customers>{
   + customer_code [PK]
   --
   pass
