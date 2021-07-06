@@ -1,5 +1,11 @@
 ```uml
 @startuml
+
+' hide the spot
+hide circle
+
+' avoid problems with angled crows feet
+skinparam linetype ortho
 entity "購入テーブル" as customer <d_purchase> {
   + order_id [PK]
   --
