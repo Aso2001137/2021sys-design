@@ -1,4 +1,3 @@
-```uml
 @startuml
 
 ' hide the spot
@@ -6,63 +5,29 @@ hide circle
 
 ' avoid problems with angled crows feet
 skinparam linetype ortho
-entity "購入テーブル" as customer <d_purchase> {
-  + order_id [PK]
+
+entity "Entity01" as e01 {
+  *e1_id : number <<generated>>
   --
-  order_id
-  customer_code
-  purchase_date
-  total_price
+  *name : text
+  description : text
 }
 
-entity "購入テーブル詳細" as  customer <d_purchase_detail> {
-+ detail_id,order_id [PK]
+entity "Entity02" as e02 {
+  *e2_id : number <<generated>>
   --
-  detail_id
-  order_id
-  item_code
-  price
-  num
+  *e1_id : number <<FK>>
+  other_details : text
 }
 
-entity "ユーザーテーブル" as  customer <m_customers>{
-  + customer_code [PK]
+entity "Entity03" as e03 {
+  *e3_id : number <<generated>>
   --
-  customer_code
-  pass
-  name
-  address
-  tel
-  mail
-  del_flag
-  reg_date
+  e1_id : number <<FK>>
+  other_details : text
 }
 
-entity "カテゴリテーブル" as  customer <m_category>{
-  + category_id [PK]
-  --
-  category_id 
-  name
-  reg_date
-}
+e01 ||..o{ e02
+e01 |o..o{ e03
 
-entity "商品テーブル" as  customer <m_items>{
-  + item_code [PK]
-  --
-  item_code
-  item_name
-  price
-  category_id
-  image
-  detail
-  del_flag
-  reg_date
-}
-
-m_customers ----- d_purchase
-d_purchase ----- d_purchase_detail
-d_purchase_detail ----- m_items
-m_items ----- m_category
 @enduml
-```
-
