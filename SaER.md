@@ -1,6 +1,5 @@
-```uml
-@startuml
-entity "ユーザーテーブル" as customer <m_customers>{
+
+entity "ユーザーテーブル" as  <m_customers>{
   + customer_code [PK]
   --
   pass
