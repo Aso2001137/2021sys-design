@@ -1,3 +1,4 @@
+```uml
 @startuml
 
 ' hide the spot
@@ -31,3 +32,4 @@ e01 ||..o{ e02
 e01 |o..o{ e03
 
 @enduml
+```
