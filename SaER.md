@@ -1,7 +1,6 @@
 ```uml
 @startuml
-entity "購入テーブル" as customer <d_purchase> 
-<<M.MASTER_MARK_COLOR>>{
+entity "購入テーブル" as customer <d_purchase> {
 + order_id [PK]
 --
 order_id
